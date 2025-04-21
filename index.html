@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Sneakers Advertisement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .main-content {
+            padding: 30px;
+        }
+
+        h2 {
+            color: #ff6f61;
+        }
+
+        #dynamicText {
+            font-size: 20px;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        #sneakersImage {
+            width: 300px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        #newElement {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: lightgreen;
+            border: 1px solid green;
+            display: none;
+        }
+
+        .button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button:hover {
+            background-color: #e55b4f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exclusive Nike Sneakers Deal!</h1>
+    </header>
+
+    <div class="main-content">
+        <h2>Get the Best Sneakers for Your Active Lifestyle!</h2>
+
+        <img id="sneakersImage" src="data:image/jpeg;base64,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" alt="Nike Sneakers">
+        
+        <p id="dynamicText">Nike sneakers are the perfect blend of comfort, style, and performance. Don't miss out on the best deal of the year!</p>
+        
+        <button class="button" onclick="changeText()">Change Text</button>
+        <button class="button" onclick="changeStyle()">Change Style</button>
+        <button class="button" onclick="addRemoveElement()">Add/Remove Element</button>
+
+        <div id="newElement">
+            <p>Congratulations! You’ve unlocked an exclusive 10% discount on your next purchase!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p style="text-align: center; font-size: 14px; padding: 10px; background-color: #1a1a1a; color: white;">Nike - Just Do It!</p>
+    </footer>
+
+    <script>
+        // Function to change the text content dynamically
+        function changeText() {
+            document.getElementById("dynamicText").textContent = "Check out our latest collection of Nike sneakers – now with a 10% discount!";
+        }
+
+        // Function to modify CSS styles via JavaScript
+        function changeStyle() {
+            const textElement = document.getElementById("dynamicText");
+            textElement.style.fontSize = "24px";
+            textElement.style.color = "#e55b4f";
+        }
+
+        // Function to add or remove an element
+        function addRemoveElement() {
+            const element = document.getElementById("newElement");
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
